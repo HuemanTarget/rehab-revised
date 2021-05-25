@@ -25,6 +25,7 @@
 		4E22671A265D69C70086A87C /* JournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226719265D69C70086A87C /* JournalListView.swift */; };
 		4E22671D265D78030086A87C /* AddPillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22671C265D78030086A87C /* AddPillViewModel.swift */; };
 		4E226724265D80890086A87C /* AddPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226723265D80890086A87C /* AddPillView.swift */; };
+		4E226728265D98480086A87C /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226727265D98480086A87C /* CheckboxStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		4E226719265D69C70086A87C /* JournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListView.swift; sourceTree = "<group>"; };
 		4E22671C265D78030086A87C /* AddPillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillViewModel.swift; sourceTree = "<group>"; };
 		4E226723265D80890086A87C /* AddPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillView.swift; sourceTree = "<group>"; };
+		4E226727265D98480086A87C /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		4E2266D8265D41F30086A87C /* RehabRevised */ = {
 			isa = PBXGroup;
 			children = (
+				4E226726265D98340086A87C /* Styles */,
 				4E2266EE265D455D0086A87C /* Managers */,
 				4E2266F6265D48C70086A87C /* Models */,
 				4E2266EF265D45750086A87C /* Extensions */,
@@ -157,6 +160,14 @@
 				4E2266FD265D4EC30086A87C /* Pill+Extension.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4E226726265D98340086A87C /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4E226727265D98480086A87C /* CheckboxStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 				4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */,
 				4E226713265D54460086A87C /* AddJournalView.swift in Sources */,
+				4E226728265D98480086A87C /* CheckboxStyle.swift in Sources */,
 				4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

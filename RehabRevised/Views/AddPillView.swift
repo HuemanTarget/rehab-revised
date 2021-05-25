@@ -16,9 +16,82 @@ struct AddPillView: View {
   @State private var errorTitle: String = ""
   @State private var errorMessage: String = ""
   
+  let mesurements = [ "mg", "mL" ]
+  
+  let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+  
   var body: some View {
     Form {
+      TextField("Medication Name", text: $addPillVM.name)
       
+      HStack {
+        TextField("Dosage", text: $addPillVM.dosage)
+        
+        Spacer ()
+        
+        Picker("Dosage Measurement", selection: $addPillVM.dosageMeasurement) {
+          ForEach(mesurements, id: \.self) { dose in
+            Text("\(dose)").tag(dose)
+          }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+      }
+      
+      HStack {
+        TextField("Per Dose", text: $addPillVM.dosage)
+          .keyboardType(.decimalPad)
+        
+        Divider()
+        
+        
+        
+        Toggle(isOn: $addPillVM.morning) {
+          Text("Morning")
+            .font(.subheadline)
+        }
+        .toggleStyle(CheckboxStyle())
+        
+        Spacer()
+        
+        Toggle(isOn: $addPillVM.afternoon) {
+          Text("Noon")
+            .font(.subheadline)
+        }
+        .toggleStyle(CheckboxStyle())
+        
+        Spacer()
+        
+        Toggle(isOn: $addPillVM.night) {
+          Text("Night")
+            .font(.subheadline)
+        }
+        .toggleStyle(CheckboxStyle())
+      }
+      
+      TextField("Quantity", text: $addPillVM.pillQuantity)
+        .keyboardType(.numberPad)
+      
+      HStack {
+        Spacer()
+        Button("Save Medication") {
+          if self.addPillVM.name != "" {
+            addPillVM.save()
+            presentationMode.wrappedValue.dismiss()
+          } else {
+            self.errorShowing = true
+            self.errorTitle = "Invalid Medication Name"
+            self.errorMessage = "Please enter something for\nthe medication name."
+            
+            return
+          }
+        }
+        Spacer()
+      }
+    }
+    .navigationTitle("Add Medication")
+    .embedInNavigationView()
+    .alert(isPresented: $errorShowing) {
+      Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
     }
   }
 }
