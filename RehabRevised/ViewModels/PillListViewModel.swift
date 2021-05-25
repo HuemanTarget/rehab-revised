@@ -24,7 +24,7 @@ class PillListViewModel: NSObject, ObservableObject {
   func minusPill() {
     
     let pill = Pill(context: Pill.viewContext)
-    let quantity = Int(pill.pillQuantity!)
+    let quantity = Int(pill.pillQuantity ?? "0")
     let minus = String(quantity! - 1)
     
     pill.pillQuantity = minus
@@ -35,7 +35,7 @@ class PillListViewModel: NSObject, ObservableObject {
   func addPill() {
     
     let pill = Pill(context: Pill.viewContext)
-    let quantity = Int(pill.pillQuantity!)
+    let quantity = Int(pill.pillQuantity ?? "0")
     let minus = String(quantity! + 1)
     
     pill.pillQuantity = minus
@@ -46,7 +46,7 @@ class PillListViewModel: NSObject, ObservableObject {
   func refillPill() {
     
     let pill = Pill(context: Pill.viewContext)
-    let quantity = Int(pill.pillQuantity!)
+    let quantity = Int(pill.pillQuantity ?? "0")
     let minus = String(quantity! + 30)
     
     pill.pillQuantity = minus

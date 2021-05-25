@@ -11,7 +11,7 @@ import SwiftUI
 struct RehabRevisedApp: App {
   var body: some Scene {
     WindowGroup {
-      AddPillView()
+      ContentView()
     }
   }
 }
