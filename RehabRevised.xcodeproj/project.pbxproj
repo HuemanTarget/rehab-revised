@@ -15,6 +15,7 @@
 		4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F3265D45B50086A87C /* CoreDataManager.swift */; };
 		4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F7265D48D30086A87C /* BaseModel.swift */; };
 		4E2266FB265D4E040086A87C /* Journal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266FA265D4E040086A87C /* Journal+Extension.swift */; };
+		4E2266FE265D4EC30086A87C /* Pill+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266FD265D4EC30086A87C /* Pill+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4E2266F3265D45B50086A87C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4E2266F7265D48D30086A87C /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		4E2266FA265D4E040086A87C /* Journal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+Extension.swift"; sourceTree = "<group>"; };
+		4E2266FD265D4EC30086A87C /* Pill+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pill+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				4E2266F7265D48D30086A87C /* BaseModel.swift */,
 				4E2266FA265D4E040086A87C /* Journal+Extension.swift */,
+				4E2266FD265D4EC30086A87C /* Pill+Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
 				4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */,
 				4E2266FB265D4E040086A87C /* Journal+Extension.swift in Sources */,
+				4E2266FE265D4EC30086A87C /* Pill+Extension.swift in Sources */,
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 			);
