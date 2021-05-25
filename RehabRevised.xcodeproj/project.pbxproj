@@ -14,6 +14,7 @@
 		4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266EA265D436A0086A87C /* Rehab.xcdatamodeld */; };
 		4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F3265D45B50086A87C /* CoreDataManager.swift */; };
 		4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F7265D48D30086A87C /* BaseModel.swift */; };
+		4E2266FB265D4E040086A87C /* Journal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266FA265D4E040086A87C /* Journal+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4E2266EB265D436A0086A87C /* Rehab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rehab.xcdatamodel; sourceTree = "<group>"; };
 		4E2266F3265D45B50086A87C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4E2266F7265D48D30086A87C /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		4E2266FA265D4E040086A87C /* Journal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4E2266F7265D48D30086A87C /* BaseModel.swift */,
+				4E2266FA265D4E040086A87C /* Journal+Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				4E2266DC265D41F30086A87C /* ContentView.swift in Sources */,
 				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
 				4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */,
+				4E2266FB265D4E040086A87C /* Journal+Extension.swift in Sources */,
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 			);
