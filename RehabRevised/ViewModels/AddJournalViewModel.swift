@@ -15,7 +15,7 @@ class AddJournalViewModel: ObservableObject {
   var hr: String = ""
   var notes: String = ""
   var oxygen: String = ""
-  var pain: String = "N/A"
+  var pain: String = "0"
   var temperature: String = ""
   var tempType: String = "°F"
   var title: String = ""

@@ -23,6 +23,7 @@
 		4E226713265D54460086A87C /* AddJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226712265D54460086A87C /* AddJournalView.swift */; };
 		4E226717265D624C0086A87C /* JournalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226716265D624C0086A87C /* JournalListViewModel.swift */; };
 		4E22671A265D69C70086A87C /* JournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226719265D69C70086A87C /* JournalListView.swift */; };
+		4E22671D265D78030086A87C /* AddPillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22671C265D78030086A87C /* AddPillViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		4E226712265D54460086A87C /* AddJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalView.swift; sourceTree = "<group>"; };
 		4E226716265D624C0086A87C /* JournalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewModel.swift; sourceTree = "<group>"; };
 		4E226719265D69C70086A87C /* JournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListView.swift; sourceTree = "<group>"; };
+		4E22671C265D78030086A87C /* AddPillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */,
 				4E226716265D624C0086A87C /* JournalListViewModel.swift */,
+				4E22671C265D78030086A87C /* AddPillViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				4E226717265D624C0086A87C /* JournalListViewModel.swift in Sources */,
 				4E2266FB265D4E040086A87C /* Journal+Extension.swift in Sources */,
 				4E2266FE265D4EC30086A87C /* Pill+Extension.swift in Sources */,
+				4E22671D265D78030086A87C /* AddPillViewModel.swift in Sources */,
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 				4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */,
