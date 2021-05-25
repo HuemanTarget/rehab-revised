@@ -13,6 +13,7 @@
 		4E2266E1265D41F50086A87C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2266E0265D41F50086A87C /* Preview Assets.xcassets */; };
 		4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266EA265D436A0086A87C /* Rehab.xcdatamodeld */; };
 		4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F3265D45B50086A87C /* CoreDataManager.swift */; };
+		4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F7265D48D30086A87C /* BaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4E2266E2265D41F50086A87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2266EB265D436A0086A87C /* Rehab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rehab.xcdatamodel; sourceTree = "<group>"; };
 		4E2266F3265D45B50086A87C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4E2266F7265D48D30086A87C /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4E2266EE265D455D0086A87C /* Managers */,
+				4E2266F6265D48C70086A87C /* Models */,
 				4E2266EF265D45750086A87C /* Extensions */,
 				4E2266F0265D45840086A87C /* App */,
 				4E2266F1265D45910086A87C /* ViewModels */,
@@ -113,6 +116,14 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4E2266F6265D48C70086A87C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E2266F7265D48D30086A87C /* BaseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
 				4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */,
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
+				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
