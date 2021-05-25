@@ -11,6 +11,7 @@
 		4E2266DC265D41F30086A87C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266DB265D41F30086A87C /* ContentView.swift */; };
 		4E2266DE265D41F50086A87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2266DD265D41F50086A87C /* Assets.xcassets */; };
 		4E2266E1265D41F50086A87C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2266E0265D41F50086A87C /* Preview Assets.xcassets */; };
+		4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266EA265D436A0086A87C /* Rehab.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4E2266DD265D41F50086A87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2266E0265D41F50086A87C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E2266E2265D41F50086A87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E2266EB265D436A0086A87C /* Rehab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rehab.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				4E2266DD265D41F50086A87C /* Assets.xcassets */,
 				4E2266E2265D41F50086A87C /* Info.plist */,
 				4E2266DF265D41F50086A87C /* Preview Content */,
+				4E2266EA265D436A0086A87C /* Rehab.xcdatamodeld */,
 			);
 			path = RehabRevised;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2266DC265D41F30086A87C /* ContentView.swift in Sources */,
+				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +332,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E2266EA265D436A0086A87C /* Rehab.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E2266EB265D436A0086A87C /* Rehab.xcdatamodel */,
+			);
+			currentVersion = 4E2266EB265D436A0086A87C /* Rehab.xcdatamodel */;
+			path = Rehab.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E2266CE265D41F30086A87C /* Project object */;
 }

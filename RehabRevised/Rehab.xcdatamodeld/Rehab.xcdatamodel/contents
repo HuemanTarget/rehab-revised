@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Journal" representedClassName="Journal" syncable="YES" codeGenerationType="class">
+        <attribute name="bpd" optional="YES" attributeType="String"/>
+        <attribute name="bps" optional="YES" attributeType="String"/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="643646400" usesScalarValueType="NO"/>
+        <attribute name="hr" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="oxygen" optional="YES" attributeType="String"/>
+        <attribute name="pain" optional="YES" attributeType="String"/>
+        <attribute name="temperature" optional="YES" attributeType="String"/>
+        <attribute name="tempType" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Journal" positionX="-63" positionY="-18" width="128" height="194"/>
+    </elements>
+</model>
