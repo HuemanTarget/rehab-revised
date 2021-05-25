@@ -24,6 +24,7 @@
 		4E226717265D624C0086A87C /* JournalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226716265D624C0086A87C /* JournalListViewModel.swift */; };
 		4E22671A265D69C70086A87C /* JournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226719265D69C70086A87C /* JournalListView.swift */; };
 		4E22671D265D78030086A87C /* AddPillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22671C265D78030086A87C /* AddPillViewModel.swift */; };
+		4E226724265D80890086A87C /* AddPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226723265D80890086A87C /* AddPillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4E226716265D624C0086A87C /* JournalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewModel.swift; sourceTree = "<group>"; };
 		4E226719265D69C70086A87C /* JournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListView.swift; sourceTree = "<group>"; };
 		4E22671C265D78030086A87C /* AddPillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillViewModel.swift; sourceTree = "<group>"; };
+		4E226723265D80890086A87C /* AddPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				4E226712265D54460086A87C /* AddJournalView.swift */,
 				4E226719265D69C70086A87C /* JournalListView.swift */,
+				4E226723265D80890086A87C /* AddPillView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E226707265D50380086A87C /* String+Extensions.swift in Sources */,
+				4E226724265D80890086A87C /* AddPillView.swift in Sources */,
 				4E2266DC265D41F30086A87C /* ContentView.swift in Sources */,
 				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
 				4E226701265D4F720086A87C /* View+Extensions.swift in Sources */,
