@@ -20,6 +20,7 @@
 		4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226703265D4FBE0086A87C /* Date+Extensions.swift */; };
 		4E226707265D50380086A87C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226706265D50380086A87C /* String+Extensions.swift */; };
 		4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */; };
+		4E226713265D54460086A87C /* AddJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226712265D54460086A87C /* AddJournalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4E226703265D4FBE0086A87C /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		4E226706265D50380086A87C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewModel.swift; sourceTree = "<group>"; };
+		4E226712265D54460086A87C /* AddJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,6 @@
 				4E2266F0265D45840086A87C /* App */,
 				4E2266F1265D45910086A87C /* ViewModels */,
 				4E2266F2265D459B0086A87C /* Views */,
-				4E2266D9265D41F30086A87C /* RehabRevisedApp.swift */,
-				4E2266DB265D41F30086A87C /* ContentView.swift */,
 				4E2266DD265D41F50086A87C /* Assets.xcassets */,
 				4E2266E2265D41F50086A87C /* Info.plist */,
 				4E2266DF265D41F50086A87C /* Preview Content */,
@@ -115,6 +115,8 @@
 		4E2266F0265D45840086A87C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4E2266D9265D41F30086A87C /* RehabRevisedApp.swift */,
+				4E2266DB265D41F30086A87C /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -130,6 +132,7 @@
 		4E2266F2265D459B0086A87C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4E226712265D54460086A87C /* AddJournalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 				4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */,
+				4E226713265D54460086A87C /* AddJournalView.swift in Sources */,
 				4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
