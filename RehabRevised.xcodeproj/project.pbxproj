@@ -19,6 +19,7 @@
 		4E226701265D4F720086A87C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226700265D4F720086A87C /* View+Extensions.swift */; };
 		4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226703265D4FBE0086A87C /* Date+Extensions.swift */; };
 		4E226707265D50380086A87C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226706265D50380086A87C /* String+Extensions.swift */; };
+		4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4E226700265D4F720086A87C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		4E226703265D4FBE0086A87C /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		4E226706265D50380086A87C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		4E2266F1265D45910086A87C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 				4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */,
+				4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"RehabRevised/Preview Content\"";
 				DEVELOPMENT_TEAM = 58XKH6936U;
 				ENABLE_PREVIEWS = YES;
@@ -357,7 +362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pompouscatstudios.RehabRevised;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pompouscatstudios.Rehab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,6 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"RehabRevised/Preview Content\"";
 				DEVELOPMENT_TEAM = 58XKH6936U;
 				ENABLE_PREVIEWS = YES;
@@ -379,7 +385,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pompouscatstudios.RehabRevised;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pompouscatstudios.Rehab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
