@@ -12,6 +12,7 @@
 		4E2266DE265D41F50086A87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2266DD265D41F50086A87C /* Assets.xcassets */; };
 		4E2266E1265D41F50086A87C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2266E0265D41F50086A87C /* Preview Assets.xcassets */; };
 		4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266EA265D436A0086A87C /* Rehab.xcdatamodeld */; };
+		4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2266F3265D45B50086A87C /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4E2266E0265D41F50086A87C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E2266E2265D41F50086A87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2266EB265D436A0086A87C /* Rehab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rehab.xcdatamodel; sourceTree = "<group>"; };
+		4E2266F3265D45B50086A87C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,11 @@
 		4E2266D8265D41F30086A87C /* RehabRevised */ = {
 			isa = PBXGroup;
 			children = (
+				4E2266EE265D455D0086A87C /* Managers */,
+				4E2266EF265D45750086A87C /* Extensions */,
+				4E2266F0265D45840086A87C /* App */,
+				4E2266F1265D45910086A87C /* ViewModels */,
+				4E2266F2265D459B0086A87C /* Views */,
 				4E2266D9265D41F30086A87C /* RehabRevisedApp.swift */,
 				4E2266DB265D41F30086A87C /* ContentView.swift */,
 				4E2266DD265D41F50086A87C /* Assets.xcassets */,
@@ -70,6 +77,42 @@
 				4E2266E0265D41F50086A87C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E2266EE265D455D0086A87C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4E2266F3265D45B50086A87C /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4E2266EF265D45750086A87C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E2266F0265D45840086A87C /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E2266F1265D45910086A87C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4E2266F2265D459B0086A87C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +186,7 @@
 			files = (
 				4E2266DC265D41F30086A87C /* ContentView.swift in Sources */,
 				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
+				4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */,
 				4E2266DA265D41F30086A87C /* RehabRevisedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
