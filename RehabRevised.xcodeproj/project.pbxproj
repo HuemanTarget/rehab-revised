@@ -26,6 +26,7 @@
 		4E22671D265D78030086A87C /* AddPillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22671C265D78030086A87C /* AddPillViewModel.swift */; };
 		4E226724265D80890086A87C /* AddPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226723265D80890086A87C /* AddPillView.swift */; };
 		4E226728265D98480086A87C /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226727265D98480086A87C /* CheckboxStyle.swift */; };
+		4E22672B265DB08E0086A87C /* PillListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22672A265DB08E0086A87C /* PillListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		4E22671C265D78030086A87C /* AddPillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillViewModel.swift; sourceTree = "<group>"; };
 		4E226723265D80890086A87C /* AddPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillView.swift; sourceTree = "<group>"; };
 		4E226727265D98480086A87C /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		4E22672A265DB08E0086A87C /* PillListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */,
 				4E226716265D624C0086A87C /* JournalListViewModel.swift */,
 				4E22671C265D78030086A87C /* AddPillViewModel.swift */,
+				4E22672A265DB08E0086A87C /* PillListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				4E2266F8265D48D30086A87C /* BaseModel.swift in Sources */,
 				4E226704265D4FBE0086A87C /* Date+Extensions.swift in Sources */,
 				4E226713265D54460086A87C /* AddJournalView.swift in Sources */,
+				4E22672B265DB08E0086A87C /* PillListViewModel.swift in Sources */,
 				4E226728265D98480086A87C /* CheckboxStyle.swift in Sources */,
 				4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */,
 			);
