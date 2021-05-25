@@ -24,7 +24,7 @@ class JournalListViewModel: NSObject, ObservableObject {
   func getAllJournals() {
     
     let request: NSFetchRequest<Journal> = Journal.fetchRequest()
-    request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+    request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
     fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreDataManager.shared.viewContext, sectionNameKeyPath: nil, cacheName: nil)
     try? fetchedResultsController.performFetch()
     

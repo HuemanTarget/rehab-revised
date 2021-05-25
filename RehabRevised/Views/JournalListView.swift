@@ -72,6 +72,8 @@ struct JournalCell: View {
   var body: some View {
     VStack(alignment: .leading) {
 //      Text("\(journal.date ?? Date(), formatter: self.dateFormatter)")
+      Text(journal.date!)
+        .font(.subheadline)
       Text(journal.title)
         .padding(.bottom, 2)
         .font(.title)
