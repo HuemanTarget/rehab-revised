@@ -22,6 +22,7 @@
 		4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */; };
 		4E226713265D54460086A87C /* AddJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226712265D54460086A87C /* AddJournalView.swift */; };
 		4E226717265D624C0086A87C /* JournalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226716265D624C0086A87C /* JournalListViewModel.swift */; };
+		4E22671A265D69C70086A87C /* JournalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E226719265D69C70086A87C /* JournalListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4E22670E265D50FF0086A87C /* AddJournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewModel.swift; sourceTree = "<group>"; };
 		4E226712265D54460086A87C /* AddJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalView.swift; sourceTree = "<group>"; };
 		4E226716265D624C0086A87C /* JournalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewModel.swift; sourceTree = "<group>"; };
+		4E226719265D69C70086A87C /* JournalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				4E226712265D54460086A87C /* AddJournalView.swift */,
+				4E226719265D69C70086A87C /* JournalListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				4E2266DC265D41F30086A87C /* ContentView.swift in Sources */,
 				4E2266EC265D436A0086A87C /* Rehab.xcdatamodeld in Sources */,
 				4E226701265D4F720086A87C /* View+Extensions.swift in Sources */,
+				4E22671A265D69C70086A87C /* JournalListView.swift in Sources */,
 				4E2266F4265D45B50086A87C /* CoreDataManager.swift in Sources */,
 				4E226717265D624C0086A87C /* JournalListViewModel.swift in Sources */,
 				4E2266FB265D4E040086A87C /* Journal+Extension.swift in Sources */,
