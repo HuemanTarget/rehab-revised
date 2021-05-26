@@ -96,7 +96,7 @@ struct PillCell: View {
         }
         
         HStack {
-          Text(pill.usage)
+          Text("\(pill.usage) x per dose")
           
           Spacer()
           

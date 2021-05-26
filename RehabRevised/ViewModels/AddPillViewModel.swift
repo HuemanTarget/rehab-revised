@@ -15,7 +15,7 @@ class AddPillViewModel: ObservableObject {
   @Published var morning: Bool = false
   var name: String = ""
   @Published var night: Bool = false
-  var pillQuantity: String! = ""
+  var pillQuantity: String = ""
   var usage: String = ""
   
   func save() {
