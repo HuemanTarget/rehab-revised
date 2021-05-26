@@ -74,6 +74,10 @@ struct AddPillView: View {
       HStack {
         Spacer()
         Button("Save Medication") {
+          if self.addPillVM.pillQuantity == "" {
+            addPillVM.pillQuantity = "0"
+          }
+          
           if self.addPillVM.name != "" {
             addPillVM.save()
             presentationMode.wrappedValue.dismiss()

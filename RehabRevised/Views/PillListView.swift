@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct PillListView: View {
   
@@ -23,8 +24,7 @@ struct PillListView: View {
   
   var body: some View {
     List {
-      
-      
+
       ForEach(pillListVM.pills, id: \.pillId) { pill in
         PillCell(pill: pill)
       }
@@ -56,7 +56,9 @@ struct PillListView_Previews: PreviewProvider {
 
 struct PillCell: View {
   
-  @StateObject private var pillListVM = PillListViewModel()
+  @Environment(\.managedObjectContext) var managedObjectContext
+  @FetchRequest(entity: Pill.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Pill.name, ascending: true)]) var pills: FetchedResults<Pill>
+  
   let pill: PillViewModel
   
   var body: some View {
@@ -79,7 +81,12 @@ struct PillCell: View {
           Spacer()
           
           Button("Refill") {
-            pillListVM.refillPill()
+            let pill = Pill(context: Pill.viewContext)
+            let quantity = Int(pill.pillQuantity!)
+            let refill = String(quantity! + 30)
+            
+            pill.pillQuantity = refill
+            pill.save()
           }
         }
         
@@ -109,7 +116,7 @@ struct PillCell: View {
           Spacer()
           
           Button(action: {
-            pillListVM.minusPill()
+//            pillListVM.minusPill()
           }) {
             Image(systemName: "minus.circle")
               .resizable()
@@ -119,7 +126,7 @@ struct PillCell: View {
           Text("-")
           
           Button(action: {
-            pillListVM.addPill()
+//            pillListVM.addPill()
           }) {
             Image(systemName: "plus.circle")
               .resizable()
