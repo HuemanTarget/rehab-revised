@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 class AddPillViewModel: ObservableObject {
-  var afternoon: Bool = false
+  @Published var afternoon: Bool = false
   var dosage: String = ""
   var dosageMeasurement: String = "mg"
-  var morning: Bool = false
+  @Published var morning: Bool = false
   var name: String = ""
-  var night: Bool = false
+  @Published var night: Bool = false
   var pillQuantity: String! = ""
   var usage: String = ""
   

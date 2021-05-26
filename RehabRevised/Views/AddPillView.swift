@@ -12,6 +12,11 @@ struct AddPillView: View {
   @StateObject private var addPillVM = AddPillViewModel()
   @Environment(\.presentationMode) var presentationMode
   
+  @State private var morning: Bool = false
+  @State private var noon: Bool = false
+  @State private var night: Bool = false
+  @State private var pillQuantity: String = ""
+  
   @State private var errorShowing: Bool = false
   @State private var errorTitle: String = ""
   @State private var errorMessage: String = ""
@@ -74,11 +79,18 @@ struct AddPillView: View {
       HStack {
         Spacer()
         Button("Save Medication") {
-          if self.addPillVM.pillQuantity == "" {
-            addPillVM.pillQuantity = "0"
+          if self.pillQuantity == "" {
+            pillQuantity = "0"
           }
           
           if self.addPillVM.name != "" {
+//            let pill = Pill(context: self.managedObjectContext)
+//            pill.morning = self.morning
+//            pill.afternoon = self.noon
+//            pill.night = self.night
+//            pill.pillQuantity = self.pillQuantity
+//
+//            try? self.managedObjectContext.save()
             addPillVM.save()
             presentationMode.wrappedValue.dismiss()
           } else {

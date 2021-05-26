@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PillListView: View {
-  
+  @Environment(\.managedObjectContext) var managedObjectContext
   @StateObject private var pillListVM = PillListViewModel()
   
   @State private var showingAddPillView: Bool = false
@@ -23,7 +23,7 @@ struct PillListView: View {
   
   var body: some View {
     List {
-
+      
       ForEach(pillListVM.pills, id: \.pillId) { pill in
         PillCell(pill: pill)
       }
@@ -38,7 +38,7 @@ struct PillListView: View {
         Text("Add")
         
         Image(systemName: "pills")
-          
+        
       }
     })
     .sheet(isPresented: $showingAddPillView, onDismiss: {
@@ -83,14 +83,16 @@ struct PillCell: View {
           
           Spacer()
           
-          Button("Refill") {
-            let pill = Pill(context: Pill.viewContext)
-            let quantity = Int(pill.pillQuantity!)
-            let refill = String(quantity! + 30)
-            
-            pill.pillQuantity = refill
-            pill.save()
+          Button(action: {
+            //            pillListVM.addPill()
+          }) {
+            Text("Refill")
+              .padding(8)
+              .background(Color.red)
+              .foregroundColor(.white)
+              .clipShape(RoundedRectangle(cornerRadius: 5))
           }
+          .buttonStyle(PlainButtonStyle())
         }
         
         HStack {
@@ -114,27 +116,35 @@ struct PillCell: View {
         }
         
         HStack {
-          Text(pill.pillQuantity)
+          Text("\(pill.pillQuantity) pills remaining")
           
           Spacer()
           
           Button(action: {
-//            pillListVM.minusPill()
+            //            pillListVM.addPill()
           }) {
             Image(systemName: "minus.circle")
               .resizable()
               .scaledToFit()
+              .foregroundColor(.white)
+              .background(Circle().fill(Color.red))
+              .frame(width: 35, height: 35)
           }
+          .buttonStyle(PlainButtonStyle())
           
           Text("-")
           
           Button(action: {
-//            pillListVM.addPill()
+            //            pillListVM.addPill()
           }) {
             Image(systemName: "plus.circle")
               .resizable()
               .scaledToFit()
+              .foregroundColor(.white)
+              .background(Circle().fill(Color.green))
+              .frame(width: 35, height: 35)
           }
+          .buttonStyle(PlainButtonStyle())
         }
       }
     }
