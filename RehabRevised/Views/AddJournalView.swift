@@ -77,7 +77,15 @@ struct AddJournalView: View {
         Spacer()
       }
     }
-    .navigationTitle("Add Journal Entry")
+    .navigationBarTitle("Add Journal", displayMode: .inline )
+    .navigationBarItems(
+      trailing:
+        Button(action: {
+          presentationMode.wrappedValue.dismiss()
+        }) {
+          Image(systemName: "xmark")
+        }
+    )
     .embedInNavigationView()
     .alert(isPresented: $errorShowing) {
       Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))

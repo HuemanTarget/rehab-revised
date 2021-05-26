@@ -92,7 +92,15 @@ struct AddPillView: View {
         Spacer()
       }
     }
-    .navigationTitle("Add Medication")
+    .navigationBarTitle("Add Medication", displayMode: .inline )
+    .navigationBarItems(
+      trailing:
+        Button(action: {
+          presentationMode.wrappedValue.dismiss()
+        }) {
+          Image(systemName: "xmark")
+        }
+    )
     .embedInNavigationView()
     .alert(isPresented: $errorShowing) {
       Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
