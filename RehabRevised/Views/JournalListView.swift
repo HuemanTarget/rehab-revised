@@ -42,9 +42,16 @@ struct JournalListView: View {
       
     }
     .listStyle(PlainListStyle())
-    .navigationTitle("Journal Entries")
-    .navigationBarItems(trailing: Button("Add Journal") {
+    .navigationBarTitle("Journal", displayMode: .inline)
+    .navigationBarItems(trailing: Button(action: {
       showingAddJournalView = true
+    }) {
+      HStack {
+        Text("Add")
+        
+        Image(systemName: "book.closed")
+          
+      }
     })
     .sheet(isPresented: $showingAddJournalView, onDismiss: {
       journalListVM.getAllJournals()

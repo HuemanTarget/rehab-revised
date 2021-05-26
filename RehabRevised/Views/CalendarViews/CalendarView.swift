@@ -16,7 +16,7 @@ struct CalendarView: View {
   }
   
   @State private var showingSheet = false
-  @State private var activeSheet: ActiveSheet = .calendarChooser
+  @State private var activeSheet: ActiveSheet = .calendarEdit
   
   @ObservedObject var eventsRepository = EventsRepository.shared
   
@@ -55,10 +55,9 @@ struct CalendarView: View {
         }) {
           Text("Select Calendars")
         }
-//        .buttonStyle(PrimaryButtonStyle())
+        .buttonStyle(PrimaryButtonStyle())
         .font(.system(size: 14, weight: .bold, design: .default))
         .frame(width: 150, height: 50)
-        .background(Color("SpaceCadet"))
         .cornerRadius(9)
         .foregroundColor(.white)
         .padding(.bottom, 20)
@@ -71,7 +70,6 @@ struct CalendarView: View {
         }
       }
       .navigationBarTitle("Calendar", displayMode: .inline)
-      .navigationBarColor(UIColor(red: 43, green: 45, blue: 66))
       .navigationBarItems(trailing: Button(action: {
         self.selectedEvent = nil
         self.activeSheet = .calendarEdit
@@ -80,9 +78,9 @@ struct CalendarView: View {
         //Image(systemName: "plus").frame(width: 44, height: 44)
         HStack {
           Text("Add")
-            .foregroundColor(Color("AliceBlue"))
+          
           Image(systemName: "calendar")
-            .foregroundColor(Color("AliceBlue"))
+          
         }
       }))
     }

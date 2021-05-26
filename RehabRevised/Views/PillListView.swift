@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct PillListView: View {
   
@@ -31,9 +30,16 @@ struct PillListView: View {
       .onDelete(perform: deletePill)
     }
     .listStyle(PlainListStyle())
-    .navigationTitle("Medication Entries")
-    .navigationBarItems(trailing: Button("Add Medication") {
+    .navigationBarTitle("Medication", displayMode: .inline)
+    .navigationBarItems(trailing: Button(action: {
       showingAddPillView = true
+    }) {
+      HStack {
+        Text("Add")
+        
+        Image(systemName: "pills")
+          
+      }
     })
     .sheet(isPresented: $showingAddPillView, onDismiss: {
       pillListVM.getAllPills()
@@ -55,9 +61,6 @@ struct PillListView_Previews: PreviewProvider {
 }
 
 struct PillCell: View {
-  
-  @Environment(\.managedObjectContext) var managedObjectContext
-  @FetchRequest(entity: Pill.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Pill.name, ascending: true)]) var pills: FetchedResults<Pill>
   
   let pill: PillViewModel
   
