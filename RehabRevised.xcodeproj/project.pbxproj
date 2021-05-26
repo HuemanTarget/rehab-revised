@@ -41,6 +41,7 @@
 		4E6790A4265E9E37004396F8 /* SelectedCalendarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6790A3265E9E37004396F8 /* SelectedCalendarsList.swift */; };
 		4E6790A7265E9E66004396F8 /* EventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6790A6265E9E66004396F8 /* EventEditView.swift */; };
 		4E6790AA265E9EDE004396F8 /* Notifications+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6790A9265E9EDE004396F8 /* Notifications+Extensions.swift */; };
+		4E6790BC265F0426004396F8 /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6790BB265F0426004396F8 /* AgreementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		4E6790A3265E9E37004396F8 /* SelectedCalendarsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCalendarsList.swift; sourceTree = "<group>"; };
 		4E6790A6265E9E66004396F8 /* EventEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditView.swift; sourceTree = "<group>"; };
 		4E6790A9265E9EDE004396F8 /* Notifications+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notifications+Extensions.swift"; sourceTree = "<group>"; };
+		4E6790BB265F0426004396F8 /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				4E226723265D80890086A87C /* AddPillView.swift */,
 				4E22672D265DBA340086A87C /* PillListView.swift */,
 				4E226733265DC0480086A87C /* TabBarView.swift */,
+				4E6790BB265F0426004396F8 /* AgreementView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				4E226713265D54460086A87C /* AddJournalView.swift in Sources */,
 				4E22672B265DB08E0086A87C /* PillListViewModel.swift in Sources */,
 				4E226728265D98480086A87C /* CheckboxStyle.swift in Sources */,
+				4E6790BC265F0426004396F8 /* AgreementView.swift in Sources */,
 				4E22670F265D50FF0086A87C /* AddJournalViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

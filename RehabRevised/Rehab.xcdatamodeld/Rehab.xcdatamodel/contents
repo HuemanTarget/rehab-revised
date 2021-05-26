@@ -21,11 +21,15 @@
         <attribute name="morning" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="night" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="pillQuantity" attributeType="String" defaultValueString="0"/>
+        <attribute name="pillQuantity" attributeType="String"/>
         <attribute name="usage" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Quantity" representedClassName="Quantity" syncable="YES" codeGenerationType="class">
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="Journal" positionX="-63" positionY="-18" width="128" height="194"/>
         <element name="Pill" positionX="-54" positionY="72" width="128" height="164"/>
+        <element name="Quantity" positionX="-54" positionY="99" width="128" height="44"/>
     </elements>
 </model>

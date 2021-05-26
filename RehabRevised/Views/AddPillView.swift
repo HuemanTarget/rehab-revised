@@ -11,11 +11,9 @@ struct AddPillView: View {
   
   @StateObject private var addPillVM = AddPillViewModel()
   @Environment(\.presentationMode) var presentationMode
+  @Environment(\.managedObjectContext) var moc
   
-//  @State private var morning: Bool = false
-//  @State private var noon: Bool = false
-//  @State private var night: Bool = false
-//  @State private var pillQuantity: String = ""
+  @State private var quantity = 0
   
   @State private var errorShowing: Bool = false
   @State private var errorTitle: String = ""
@@ -24,6 +22,12 @@ struct AddPillView: View {
   let mesurements = [ "mg", "mL" ]
   
   let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+  
+  let formatter: NumberFormatter = {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    return formatter
+  }()
   
   var body: some View {
     Form {
@@ -84,6 +88,7 @@ struct AddPillView: View {
           }
           
           if self.addPillVM.name != "" {
+            
             addPillVM.save()
             presentationMode.wrappedValue.dismiss()
           } else {

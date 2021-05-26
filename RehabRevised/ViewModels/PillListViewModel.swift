@@ -11,6 +11,7 @@ import CoreData
 class PillListViewModel: NSObject, ObservableObject {
   
   @Published var pills = [PillViewModel]()
+  var pillQuantity: String = ""
   
   private var fetchedResultsController: NSFetchedResultsController<Pill>!
   
@@ -21,35 +22,43 @@ class PillListViewModel: NSObject, ObservableObject {
     }
   }
   
-  func minusPill() {
-    
-    let pill = Pill(context: Pill.viewContext)
-    let quantity = Int(pill.pillQuantity ?? "0")
-    let minus = String(quantity! - 1)
-    
-    pill.pillQuantity = minus
-    
-    try? pill.save()
-  }
+//  func minusPill() {
+//    
+//    let pill = Pill(context: Pill.viewContext)
+//    let quantity = Int(pill.pillQuantity ?? "0")
+//    let minus = String(quantity! - 1)
+//    
+//    pill.pillQuantity = minus
+//    
+//    try? pill.save()
+//  }
+//  
+//  func addPill() {
+//    
+//    let pill = Pill(context: Pill.viewContext)
+//    let quantity = Int(pill.pillQuantity ?? "0")
+//    let minus = String(quantity! + 1)
+//    
+//    pill.pillQuantity = minus
+//    
+//    try? pill.save()
+//  }
+//  
+//  func refillPill() {
+//    
+//    let pill = Pill(context: Pill.viewContext)
+//    let quantity = Int(pill.pillQuantity ?? "0")
+//    let minus = String(quantity! + 30)
+//    
+//    pill.pillQuantity = minus
+//    
+//    try? pill.save()
+//  }
   
-  func addPill() {
+  func save() {
     
     let pill = Pill(context: Pill.viewContext)
-    let quantity = Int(pill.pillQuantity ?? "0")
-    let minus = String(quantity! + 1)
-    
-    pill.pillQuantity = minus
-    
-    try? pill.save()
-  }
-  
-  func refillPill() {
-    
-    let pill = Pill(context: Pill.viewContext)
-    let quantity = Int(pill.pillQuantity ?? "0")
-    let minus = String(quantity! + 30)
-    
-    pill.pillQuantity = minus
+    pill.pillQuantity = pillQuantity
     
     try? pill.save()
   }

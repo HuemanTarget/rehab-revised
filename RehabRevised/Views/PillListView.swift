@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PillListView: View {
-  @Environment(\.managedObjectContext) var managedObjectContext
   @StateObject private var pillListVM = PillListViewModel()
   
   @State private var showingAddPillView: Bool = false
@@ -61,8 +60,9 @@ struct PillListView_Previews: PreviewProvider {
 }
 
 struct PillCell: View {
-  
   let pill: PillViewModel
+  @StateObject private var pillListVM = PillListViewModel()
+  @StateObject private var addPillVM = AddPillViewModel()
   
   var body: some View {
     HStack {
@@ -84,7 +84,12 @@ struct PillCell: View {
           Spacer()
           
           Button(action: {
-            //            pillListVM.addPill()
+            let quantity = Int(pillListVM.pillQuantity)
+            let refill = String(quantity! + 30)
+            pillListVM.pillQuantity = refill
+            
+            pillListVM.save()
+            
           }) {
             Text("Refill")
               .padding(8)
