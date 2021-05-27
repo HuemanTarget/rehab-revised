@@ -17,7 +17,7 @@ class JournalListViewModel: NSObject, ObservableObject {
   func deleteJournal(journal: JournalViewModel) {
     let journal: Journal? = Journal.byId(id: journal.journalId)
     if let journal = journal {
-      try? journal.delete()
+      journal.delete()
     }
   }
   

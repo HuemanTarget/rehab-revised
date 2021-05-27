@@ -11,6 +11,7 @@ import CoreData
 protocol BaseModel where Self: NSManagedObject {
   
   func save()
+  func update()
   func delete()
   static func byId<T: NSManagedObject>(id: NSManagedObjectID) -> T?
   static func all<T: NSManagedObject>() -> [T]
@@ -24,6 +25,15 @@ extension BaseModel {
   }
   
   func save() {
+    do {
+      try Self.viewContext.save()
+    } catch {
+      Self.viewContext.rollback()
+      print(error)
+    }
+  }
+  
+  func update() {
     do {
       try Self.viewContext.save()
     } catch {

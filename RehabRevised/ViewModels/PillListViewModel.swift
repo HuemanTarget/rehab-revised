@@ -18,7 +18,7 @@ class PillListViewModel: NSObject, ObservableObject {
   func deletePill(pill: PillViewModel) {
     let pill: Pill? = Pill.byId(id: pill.pillId)
     if let pill = pill {
-      try? pill.delete()
+      pill.delete()
     }
   }
   
@@ -60,7 +60,7 @@ class PillListViewModel: NSObject, ObservableObject {
     let pill = Pill(context: Pill.viewContext)
     pill.pillQuantity = pillQuantity
     
-    try? pill.save()
+    pill.save()
   }
   
   func getAllPills() {
