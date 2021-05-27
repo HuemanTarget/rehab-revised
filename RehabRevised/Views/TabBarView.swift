@@ -22,7 +22,7 @@ struct TabBarView: View {
             Label("Medication", systemImage: "pills")
           }
         
-        JournalListView()
+        JournalListView(coreDM: CoreDataManager())
           .tabItem {
             Label("Journal", systemImage: "book.closed")
           }
