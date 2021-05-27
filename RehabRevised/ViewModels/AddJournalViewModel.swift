@@ -34,7 +34,7 @@ class AddJournalViewModel: ObservableObject {
     journal.tempType = tempType
     journal.title = title
     
-    try? journal.save()
+    journal.save()
   }
   
 }

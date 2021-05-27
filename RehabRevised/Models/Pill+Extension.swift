@@ -9,11 +9,5 @@ import Foundation
 import CoreData
 
 extension Pill: BaseModel {
-  static func byID<T>(id: NSManagedObjectID) -> T? where T : NSManagedObject {
-    do {
-      return try viewContext.existingObject(with: id) as? T
-    } catch {
-      return nil
-    }
-  }
+
 }

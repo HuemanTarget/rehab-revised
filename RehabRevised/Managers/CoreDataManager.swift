@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import SwiftUI
 import CoreData
+import SwiftUI
 
 class CoreDataManager {
   
@@ -15,11 +15,10 @@ class CoreDataManager {
   
   static let shared = CoreDataManager()
   
-  init() {
+  private init() {
     
     persistentContainer = NSPersistentContainer(name: "Rehab")
     persistentContainer.loadPersistentStores { (description, error) in
-      
       if let error = error {
         fatalError("Failed to initialize Core Data \(error)")
       }
@@ -32,4 +31,5 @@ class CoreDataManager {
   var viewContext: NSManagedObjectContext {
     return persistentContainer.viewContext
   }
+  
 }

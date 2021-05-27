@@ -8,14 +8,17 @@
 import Foundation
 import CoreData
 
-protocol BaseModel: NSManagedObject {
-  func save() throws
-  func delete() throws
-  static func byID<T: NSManagedObject>(id: NSManagedObjectID) -> T?
+protocol BaseModel where Self: NSManagedObject {
+  
+  func save()
+  func delete()
+  static func byId<T: NSManagedObject>(id: NSManagedObjectID) -> T?
   static func all<T: NSManagedObject>() -> [T]
+  
 }
 
 extension BaseModel {
+  
   static var viewContext: NSManagedObjectContext {
     return CoreDataManager.shared.viewContext
   }
@@ -24,13 +27,14 @@ extension BaseModel {
     do {
       try Self.viewContext.save()
     } catch {
+      Self.viewContext.rollback()
       print(error)
     }
   }
   
-  func delete() throws {
+  func delete() {
     Self.viewContext.delete(self)
-    try save()
+    save()
   }
   
   static func all<T>() -> [T] where T: NSManagedObject {
@@ -42,6 +46,7 @@ extension BaseModel {
     } catch {
       return []
     }
+    
   }
   
   static func byId<T>(id: NSManagedObjectID) -> T? where T: NSManagedObject {
@@ -49,7 +54,10 @@ extension BaseModel {
     do {
       return try viewContext.existingObject(with: id) as? T
     } catch {
+      print(error)
       return nil
     }
+    
   }
+  
 }

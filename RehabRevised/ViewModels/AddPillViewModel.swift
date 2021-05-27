@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 class AddPillViewModel: ObservableObject {
   @Published var afternoon: Bool = false
@@ -30,6 +29,6 @@ class AddPillViewModel: ObservableObject {
     pill.pillQuantity = pillQuantity
     pill.usage = usage
     
-    try? pill.save()
+    pill.save()
   }
 }
